@@ -1,2 +1,6 @@
 def solution(number):
-    return int(number) % 9
+    answer = 0
+    tmplst = list(str(number))
+    for i in tmplst:
+        answer += int(i)
+    return answer % 9
